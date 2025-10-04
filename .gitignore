@@ -1,0 +1,22 @@
+# Entorno Virtual
+.venv/
+__pycache__/
+
+# Archivos de Python
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos específicos de IDEs (como VS Code)
+.vscode/
+
+# Archivos de Imagen
+# Si los archivos .png en 'src' son activos del proyecto, NO los ignores.
+# Si solo son temporales o diagramas generados localmente, puedes ignorarlos.
+# Basado en la imagen, *asumiré que son parte del proyecto (UML, preview) y NO los ignoraré*
+# Si quisieras ignorar todas las imágenes en 'src', usarías:
+# src/*.png
+
+# Archivos del Sistema Operativo
+.DS_Store
+Thumbs.db

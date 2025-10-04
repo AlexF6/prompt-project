@@ -1,3 +1,25 @@
+## Tabla de Contenido
+
+- [Sistema de Gestión de Citas Médicas](#sistema-de-gestión-de-citas-médicas)
+- [Funcionalidades Clave por Rol](#funcionalidades-clave-por-rol)
+  - [Como Paciente](#como-paciente)
+  - [Como Administrador](#como-administrador)
+- [Criterios de Aceptación](#criterios-de-aceptación)
+  - [Para el Paciente](#para-el-paciente)
+  - [Para el Administrador](#para-el-administrador)
+- [Objetivo General](#objetivo-general)
+- [Definición de Requisitos](#sistema-de-gestión-de-citas-médicas-definición-de-requisitos)
+  - [Requisitos Funcionales (RF)](#requisitos-funcionales-rf)
+  - [Requisitos No Funcionales (RNF)](#requisitos-no-funcionales-rnf)
+- [Diagramas UML](#diagramas-uml-entidades-y-casos-de-uso)
+- [Instrucciones de Ejecución del Proyecto](#instrucciones-de-ejecución-del-proyecto)
+  - [1. Configuración del Entorno Virtual (Python)](#1-configuración-del-entorno-virtual-python)
+  - [2. Instalación de Dependencias](#2-instalación-de-dependencias)
+  - [3. Ejecución de la Aplicación](#3-ejecución-de-la-aplicación)
+  - [4. Desactivación del Entorno Virtual](#4-desactivación-del-entorno-virtual-)
+- [Preview de la aplicación](#preview-de-la-aplicación)
+
+
 # Sistema de Gestión de Citas Médicas
 
 Este proyecto tiene como objetivo desarrollar un sistema que permita a los **Pacientes** agendar, ver y cancelar sus citas médicas, y a los **Administradores** gestionar y mantener la integridad de la agenda de atención.
@@ -57,7 +79,7 @@ Este documento detalla los requisitos funcionales y no funcionales que guiarán 
 
 ---
 
-## 💻 Requisitos Funcionales (RF)
+## Requisitos Funcionales (RF)
 
 Definen las acciones que el sistema debe poder realizar para satisfacer las necesidades del usuario.
 
@@ -74,7 +96,7 @@ Definen las acciones que el sistema debe poder realizar para satisfacer las nece
 
 ---
 
-## 🛠️ Requisitos No Funcionales (RNF)
+## Requisitos No Funcionales (RNF)
 
 Definen los criterios que se utilizarán para juzgar la operación del sistema, más allá de la funcionalidad específica.
 
@@ -86,3 +108,74 @@ Definen los criterios que se utilizarán para juzgar la operación del sistema, 
 | **RNF-04** | **Portabilidad** | El proyecto debe ser **ejecutable con `python app.py`** después de instalar `flask` (`pip install flask`) en sistemas operativos Windows, Linux y Mac. |
 | **RNF-05** | **Confiabilidad (Académico)** | La persistencia de los datos será **en memoria** (los datos se pierden al reiniciar la aplicación), lo cual es suficiente para una demo o prototipo académico. |
 | **RNF-06** | **Seguridad (Académico)** | El alcance del prototipo es **demostrativo**, por lo que **no se implementarán autenticación ni roles**. (Nota: En un entorno de producción, estos elementos, junto con la protección CSRF, serían obligatorios). |
+
+## Diagramas UML (entidades y casos de uso)
+![Diagrama UML entidades](./src/UML2.png)
+![Diagrama de Casos de Uso](./src/UML.png)
+
+# Instrucciones de Ejecución del Proyecto
+> ⚡ **IDE UTILIZADO: Visual Studio Code (VS Code)**
+
+Este documento describe los pasos esenciales para configurar el entorno e iniciar la aplicación.
+
+---
+
+## 1. Configuración del Entorno Virtual (Python)
+
+Es fundamental utilizar un entorno virtual para aislar las dependencias del proyecto y evitar conflictos con otras instalaciones de Python.
+
+1.  Crea y activa un entorno virtual:
+
+    -   Windows (PowerShell):
+
+        ``` powershell
+        python -m venv .venv
+        .venv\Scripts\Activate.ps1
+        ```
+
+    -   Linux / macOS (bash/zsh):
+
+        ``` bash
+        python3 -m venv .venv
+        source .venv/bin/activate
+        ```
+
+## 2. Instalación de Dependencias
+
+Instala las librerías necesarias para el proyecto, listadas en el archivo `requirements.txt`.
+
+1.  **Instalar dependencias:**
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+---
+
+## 3. Ejecución de la Aplicación
+
+Una vez configurado el entorno e instaladas las dependencias, puedes iniciar la aplicación principal.
+
+1.  **Ejecutar el archivo `app.py`:**
+
+    ```bash
+    python app.py
+    ```
+
+La aplicación **Flask** se iniciará y estará disponible en:
+👉 **`http://127.0.0.1:5000`**
+
+*(Para detener el servidor, presiona `CTRL+C` en la terminal).*
+
+---
+
+## 4. Desactivación del Entorno Virtual 🚪
+
+Cuando termines de trabajar en el proyecto, desactiva el entorno virtual:
+
+```bash
+deactivate
+```
+
+## Preview de la aplicación
+![Diagrama de Casos de Uso](./src/preview.png)
