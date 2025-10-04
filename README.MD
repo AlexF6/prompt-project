@@ -114,11 +114,14 @@ Definen los criterios que se utilizarán para juzgar la operación del sistema, 
 ![Diagrama de Casos de Uso](./src/UML.png)
 
 # Instrucciones de Ejecución del Proyecto
+
+## Requisitos
+
+-   Python 3.10+
+-   pip
+
 > ⚡ **IDE UTILIZADO: Visual Studio Code (VS Code)**
 
-Este documento describe los pasos esenciales para configurar el entorno e iniciar la aplicación.
-
----
 
 ## 1. Configuración del Entorno Virtual (Python)
 
