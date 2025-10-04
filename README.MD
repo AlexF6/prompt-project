@@ -178,4 +178,5 @@ deactivate
 ```
 
 ## Preview de la aplicación
-![Diagrama de Casos de Uso](./src/preview.png)
+![preview](./src/preview.png)
+![preview2](./src/preview2.png)
