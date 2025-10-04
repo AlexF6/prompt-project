@@ -2,22 +2,24 @@
 
 - [Sistema de Gestión de Citas Médicas](#sistema-de-gestión-de-citas-médicas)
 - [Funcionalidades Clave por Rol](#funcionalidades-clave-por-rol)
-  - [Como Paciente](#como-paciente)
-  - [Como Administrador](#como-administrador)
-- [Criterios de Aceptación](#criterios-de-aceptación)
-  - [Para el Paciente](#para-el-paciente)
-  - [Para el Administrador](#para-el-administrador)
-- [Objetivo General](#objetivo-general)
-- [Definición de Requisitos](#sistema-de-gestión-de-citas-médicas-definición-de-requisitos)
-  - [Requisitos Funcionales (RF)](#requisitos-funcionales-rf)
-  - [Requisitos No Funcionales (RNF)](#requisitos-no-funcionales-rnf)
-- [Diagramas UML](#diagramas-uml-entidades-y-casos-de-uso)
-- [Instrucciones de Ejecución del Proyecto](#instrucciones-de-ejecución-del-proyecto)
-  - [1. Configuración del Entorno Virtual (Python)](#1-configuración-del-entorno-virtual-python)
-  - [2. Instalación de Dependencias](#2-instalación-de-dependencias)
-  - [3. Ejecución de la Aplicación](#3-ejecución-de-la-aplicación)
-  - [4. Desactivación del Entorno Virtual](#4-desactivación-del-entorno-virtual-)
-- [Preview de la aplicación](#preview-de-la-aplicación)
+  -  [Como Paciente](#como-paciente)
+  -  [Como Administrador](#como-administrador)
+- [ Criterios de Aceptación](#criterios-de-aceptación)
+  -  [Para el Paciente](#para-el-paciente)
+  -  [Para el Administrador](#para-el-administrador)
+- [ Objetivo General](#objetivo-general)
+- [ Definición de Requisitos](#sistema-de-gestión-de-citas-médicas-definición-de-requisitos)
+  -  [Requisitos Funcionales (RF)](#requisitos-funcionales-rf)
+  -  [Requisitos No Funcionales (RNF)](#requisitos-no-funcionales-rnf)
+- [ Diagramas UML](#diagramas-uml-entidades-y-casos-de-uso)
+- [ Arquitectura del Proyecto](#arquitectura-del-proyecto)
+- [ Instrucciones de Ejecución](#instrucciones-de-ejecución-del-proyecto)
+  -  [1. Configuración del Entorno Virtual (Python)](#1-configuración-del-entorno-virtual-python)
+  -  [2. Instalación de Dependencias](#2-instalación-de-dependencias)
+  -  [3. Ejecución de la Aplicación](#3-ejecución-de-la-aplicación)
+  -  [4. Desactivación del Entorno Virtual](#4-desactivación-del-entorno-virtual-)
+- [ IDE Utilizado](#requisitos)
+- [ Preview de la Aplicación](#preview-de-la-aplicación)
 
 
 # Sistema de Gestión de Citas Médicas
@@ -112,6 +114,26 @@ Definen los criterios que se utilizarán para juzgar la operación del sistema, 
 ## Diagramas UML (entidades y casos de uso)
 ![Diagrama UML entidades](./src/UML2.png)
 ![Diagrama de Casos de Uso](./src/UML.png)
+
+## Arquitectura del Proyecto  
+
+La organización del proyecto sigue una estructura modular que facilita la escalabilidad y el mantenimiento del código:  
+
+```plaintext
+DESIGN/
+│── app.py                 # Código principal de la aplicación Flask
+│── Procfile               # Configuración para desplegar en Render
+│── README.md              # Documentación del proyecto
+│── render.yaml            # Config opcional para Render
+│── requirements.txt       # Dependencias del proyecto
+│── src/                   # Recursos gráficos y diagramas
+│   ├── UML.png
+│   ├── UML2.png
+│   ├── preview.png
+│   └── preview2.png
+│── .gitignore             # Archivos y carpetas a ignorar en Git
+
+```
 
 # Instrucciones de Ejecución del Proyecto
 
